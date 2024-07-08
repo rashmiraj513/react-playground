@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 01: Pure React | React Playground</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href=".././common-resources/react-logo-xs.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <h3>Pure React</h3>
+    <div id="root"></div>
+
+    <!-- Pure React and React DOM CDN -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- React Code -->
+    <script>
+      const App = () => {
+        // Printing just the time
+        // const time = new Date().toLocaleTimeString();
+
+        // Printing the time and update the time after each second (Works like Clock)
+        const [time, setTime] = React.useState(new Date().toLocaleTimeString());
+
+        React.useEffect(() => {
+          setInterval(() => setTime(new Date().toLocaleTimeString()), 1000);
+        }, []);
+
+        // createElement() function accepts three arguments:
+        // - First one is element,
+        // - Second one is style
+        // - Third one is the content which needs to be in the element.
+        return React.createElement(
+          'p',
+          { style: { color: 'blue' } },
+          `Hello from React! The time is ${time}...`
+        );
+      };
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(React.createElement(App));
+    </script>
+  </body>
+</html>
