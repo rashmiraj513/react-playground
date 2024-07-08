@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Segoe UI';
+}
+
+.App {
+  width: 800px;
+  background-color: #eee;
+  border-radius: 15px;
+  padding: 4rem;
+  text-align: center;
+}
+
+.step {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.step button {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 30px;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+}
+
+.para-property {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.btn-flicker {
+  background-color: #7950f2;
+}
