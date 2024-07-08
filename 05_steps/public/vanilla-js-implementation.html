@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS Implementation</title>
+
+    <link
+      rel="shortcut icon"
+      href="../../common-resources/js-logo-xs.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../src/App.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="close">&times;</div>
+    </section>
+    <main class="steps">
+      <div class="numbers">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <p class="message"></p>
+      <div class="buttons">
+        <button id="previous" class="btn">Previous</button>
+        <button id="next" class="btn">Next</button>
+      </div>
+    </main>
+
+    <script>
+      const messages = [
+        'Learn React ⚛️',
+        'Apply for jobs 💼',
+        'Invest your new income 🤑',
+      ];
+      const stepElement = document.querySelector('.steps');
+      const numbersElement = document.querySelector('.numbers');
+      const numberedElement = document.querySelectorAll('.numbers div');
+      const buttonsElement = document.querySelector('.buttons');
+      const previousBtn = document.getElementById('previous');
+      const nextBtn = document.getElementById('next');
+      const paraElement = document.querySelector('.message');
+      const isOpenElement = document.querySelector('.close');
+      let step = 1;
+
+      const handlePrevious = () => {
+        if (step <= 1) return;
+        const element = numberedElement[step - 1];
+        element.classList.remove('active');
+        step -= 1;
+        render();
+      };
+
+      const handleNext = () => {
+        if (step >= 3) return;
+        step += 1;
+        const element = numberedElement[step - 1];
+        element.classList.add('active');
+        render();
+      };
+
+      const handleIsOpen = () => {
+        document.querySelector('main').classList.toggle('hide');
+      };
+
+      const render = () => {
+        numbersElement.firstElementChild.classList.add('active');
+        paraElement.textContent = `Step ${step} : ${messages[step - 1]}`;
+        if (step <= 1) {
+          previousBtn.classList.remove('active-btn');
+          previousBtn.classList.add('hide');
+        } else {
+          previousBtn.classList.remove('hide');
+          previousBtn.classList.add('active-btn');
+        }
+
+        if (step >= 3) {
+          nextBtn.classList.remove('active-btn');
+          nextBtn.classList.add('hide');
+        } else {
+          nextBtn.classList.remove('hide');
+          nextBtn.classList.add('active-btn');
+        }
+      };
+
+      // Event Listeners
+      previousBtn.addEventListener('click', handlePrevious);
+      nextBtn.addEventListener('click', handleNext);
+      isOpenElement.addEventListener('click', handleIsOpen);
+      document.addEventListener('DOMContentLoaded', render);
+    </script>
+  </body>
+</html>
