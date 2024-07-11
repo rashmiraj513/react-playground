@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #343a40;
+  line-height: 1;
+}
+
+.accordion {
+  width: 70rem;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.item {
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 2.4rem;
+  padding-right: 4.8rem;
+  cursor: pointer;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2.4rem;
+  row-gap: 3.2rem;
+  align-items: center;
+}
+
+.number,
+.title,
+.icon {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.number {
+  color: #ced4da;
+}
+
+.content-box {
+  grid-column: 2 / -1;
+  padding-bottom: 1.6rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.open {
+  border-top: 4px solid #087f5b;
+}
+
+.open .number,
+.open .title {
+  color: #087f5b;
+}
