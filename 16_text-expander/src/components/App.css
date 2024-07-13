@@ -1,0 +1,45 @@
+:root {
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --pure-white-color: #fff;
+  --text-color: #555;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.app {
+  width: 90rem;
+  margin: 5rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: var(--pure-white-color);
+}
+
+.text-expander {
+  padding: 3rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.box {
+  box-shadow: 0 0 3rem var(--box-shadow-color);
+}
