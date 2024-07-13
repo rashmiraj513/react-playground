@@ -1,0 +1,70 @@
+:root {
+  --pure-white-color: #fff;
+  --pure-black-color: #000;
+  --body-color: #343a40;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --heading-color: #1098ad;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 500;
+  color: var(--body-color);
+  line-height: 1;
+}
+
+.app {
+  margin: 5rem auto;
+  width: 60rem;
+  box-shadow: 0 0 3rem var(--box-shadow-color);
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  color: var(--heading-color);
+}
+
+.currency-converter {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.currency-converter input,
+.currency-converter select {
+  outline: none;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  border: 1px solid var(--box-shadow-color);
+  transition: all 0.4s;
+}
+
+.currency-converter input:focus,
+.currency-converter select:focus {
+  border: 2px solid var(--heading-color);
+}
+
+.converted {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
