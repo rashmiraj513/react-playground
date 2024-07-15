@@ -4,53 +4,41 @@ Welcome to my React Learning repository! This repository is dedicated to helping
 understanding of React.
 
 ## Topics
+- Introduction with React
+- React vs. Vanilla JS
+- Pure React
+- useState, useEffect, useRef and useReducer hooks
+- Fetching data from APIs with useEffect
+- React Router: Building Single-Page Applications (SPA)
+- Context API & Context API with useReducer hook
+- Redux and Modern Redux Toolkit (With Thunks)
+- React Router with Data Loading
+- Tailwind CSS
+- Redux and advanced React Router
+- Supabase: Buiding a Back-End
+- React Query
+- Advanced React Patterns
+- Implementing more features: Authentication, Dark Mode and Dashboard etc.
+- Next.js
 
 ## Projects
-
-## Resources
-
-- [Theory Slides](https://drive.google.com/file/d/1RapgJeP5eGjciidYyvogy4_lhGQzH9MC/view?usp=sharing)
-- [React Documentation](https://react.dev/learn)
-- [Create React App](https://create-react-app.dev/)
-- [Vite: Getting Started](https://vitejs.dev/guide)
-- [Adding React URL to an HTML Document](https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html)
-- [Resources to use](https://codingheroes.io/resources/)
-
-## Forgettable
-
-### Truthy and Falsy
-
-- In JavaScript, there are two types of values: `truthy` and `falsy`.
-- Truthy values are values that evaluate to true when used in boolean context while falsy values evalute to false.
-- The following values are falsy in JavaScript: `false, 0, -0, NaN, null, undefined, and "" (Empty String)`.
-
-- All other values are truthy.
-
-### Short Circuiting
-
-- Short Circuiting is a feature of the logical operators (&&, ||) in JavaScript that allows them to return a value without evaluating the whole expression.
-- It works by evaluating an expression from left to right and returning the value of the first operand that determines the final result.
-- For example, in the expression `false && true`, the `&&` operator will return `false` as soon as it evaluates the first operand, `false`. This is because the `&&` operator returns `true` if both the operands are `true`.
-
-### Logical AND (&&)
-
-- In a logical operation involving `&& (AND)`, if the first operand is falsy, JavaScript will short-circuit and return the first operand without evaluating the second operand. If the first operand is truthy, JavaScript will return the second operand.
-
-### Logical OR (||)
-
-- In a logical operation involving `|| (OR)`, if the first operand is truthy, JavaScript will short-circuit and return the first operand. If the first operand is falsy, JavaScript will return the second operand.
-
-### NULLISH COALESCING Operator (??)
-
-- The NULLISH COALESCING Operator (??) is a logical operator that returns its right-hand side operand when its left-hand side operand is `null` or, `undefined` otherwise returns its left-hand side operand.
-
-## Some Important Points about React
-
-- React uses JSX and JSX is **Declarative** (Focuses on the program's goal or end result, without specifying how to get there.) whereas Manual DOM element selections and DOM traversing is **Imperative** (Focuses on how the program should achieve its goal, by explicitly specifying each step, or instruction, that changes the program's state. Imperative programming is similar to pseudocode).
+- Pizza Menu
+- Date Counter
+- Flash Card
+- Travel List
+- Tip Calculator
+- Eat'N Split
+- Use Popcorn
+- Star Rating Reusable Component
+- Currency Converter
+- Classy Weather
+- Geolocation
+- React Quiz
+- Create a bank account with useReducer
 
 ## Self Scaffolded React Directory
 
-The folder `00_introduction/react` is created with minimal requirements of React.
+The folder `00_introduction/react` is created with minimal requirements of React and `_minimal-react-template` is the template for the minimal requirements of React framework.
 
 ## Scaffolded using `create-react-app` command
 
