@@ -1,0 +1,111 @@
+:root {
+  --background-color: #f0f0f0;
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --input-border-color: #888;
+  --input-focus-color: #1098ad;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+.App {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  border-radius: 1.6rem;
+  width: 70rem;
+  padding: 6rem;
+  box-shadow: 0 0 3rem var(--box-shadow-color);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-slider {
+  width: 80%;
+}
+
+.slider span {
+  font-size: 2rem;
+  justify-self: start;
+}
+
+.input-fill {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6rem auto 6rem;
+  align-items: center;
+}
+
+.input-fill input {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid var(--input-border-color);
+}
+
+.minus {
+  justify-self: start;
+}
+
+.plus {
+  justify-self: end;
+}
+
+.input-fill button {
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  background-color: #1098ae;
+  color: #fff;
+  font-size: 1.8rem;
+  border: none;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #1098ae;
+  transform: scale(1.01);
+  border: 1px solid currentColor;
+}
+
+.message {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
