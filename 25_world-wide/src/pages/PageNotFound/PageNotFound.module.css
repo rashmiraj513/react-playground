@@ -1,0 +1,24 @@
+.pageNotFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--color-light-1);
+}
+
+h2 {
+  font-size: 3.2rem;
+  color: var(--color-light-1);
+  text-align: center;
+}
+
+.backToHomepage {
+  text-decoration: none;
+}
