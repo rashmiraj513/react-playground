@@ -1,4 +1,10 @@
-import { createContext, useContext, useReducer, useEffect } from 'react';
+import {
+  createContext,
+  useContext,
+  useReducer,
+  useEffect,
+  useCallback,
+} from 'react';
 
 const URI = 'http://localhost:8000';
 
@@ -64,21 +70,24 @@ const CitiesProvider = ({ children }) => {
     fetchCities();
   }, []);
 
-  const getCity = async (id) => {
-    if (Number(id) === currentCity.id) return;
+  const getCity = useCallback(
+    async (id) => {
+      if (Number(id) === currentCity.id) return;
 
-    dispatch({ type: 'loading' });
-    try {
-      const res = await fetch(`${URI}/cities/${id}`);
-      if (!res.ok) {
-        throw new Error('Having problem in fetching the city...');
+      dispatch({ type: 'loading' });
+      try {
+        const res = await fetch(`${URI}/cities/${id}`);
+        if (!res.ok) {
+          throw new Error('Having problem in fetching the city...');
+        }
+        const data = await res.json();
+        dispatch({ type: 'city/loaded', payload: data });
+      } catch (err) {
+        dispatch({ type: 'rejected', payload: err.message });
       }
-      const data = await res.json();
-      dispatch({ type: 'city/loaded', payload: data });
-    } catch (err) {
-      dispatch({ type: 'rejected', payload: err.message });
-    }
-  };
+    },
+    [currentCity.id]
+  );
 
   const createCity = async (newCity) => {
     dispatch({ type: 'loading' });
