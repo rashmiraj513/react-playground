@@ -1,0 +1,49 @@
+:root {
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.App {
+  width: 80rem;
+  margin: 3rem auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.wrapper {
+  padding: 2rem;
+  box-shadow: 0 0 3.2rem var(--box-shadow-color);
+  border-radius: 7px;
+}
+
+.counter-beautify {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+span {
+  font-size: 1.8rem;
+}
+
+button {
+  font-size: 3rem;
+}
