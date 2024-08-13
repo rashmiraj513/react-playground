@@ -47,6 +47,21 @@
 - [Redux - Not Dead Yet!](https://blog.isquaredsoftware.com/2018/03/redux-not-dead-yet) (By Mark Erikson from the Redux Team)
 - [Why React Context is not a 'State Management' Tool](https://blog.isquaredsoftware.com/2021/01/context-redux-differences/) (By Mark Erikson)
 
+## React Professionals
+- [React Libraries for 2023](https://www.robinwieruch.de/react-libraries/)
+- [Styled Components best practices](https://www.joshwcomeau.com/css/styled-components/)
+- [A Through Analysis of CSS-in-JS](https://css-tricks.com/a-thorough-analysis-of-css-in-js)
+- [Practical React Query](https://tkdodo.eu/blog/practical-react-query)
+- [React Query meets React Router](https://tkdodo.eu/blog/react-query-meets-react-router)
+- [Picking the right React component problem](https://www.benmvp.com/blog/picking-right-react-component-pattern/)
+- [Bulletproof-react: A simple, scalable, and powerful architecture for building production-ready React applications](https://github.com/alan2207/bulletproof-react/)
+- [Tailwind CSS: Installation with Vite](https://tailwindcss.com/docs/guides/vite)
+- [styled-components](https://styled-components.com/docs)
+- [Supabase JavaScript Client Library](https://supabase.com/docs/reference/javascript/installing)
+- [TanStack (React) Query v4](https://tanstack.com/query/v4/docs/framework/react/overview)
+- [Recharts](https://recharts.org/en-US/examples)
+- [date-fns](https://date-fns.org/docs/Getting-Started/)
+
 ## Keep Reviewing - Easily Forgettable
 
 ### Truthy and Falsy
