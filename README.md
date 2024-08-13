@@ -4,6 +4,7 @@ Welcome to my React Learning repository! This repository is dedicated to helping
 understanding of React.
 
 ## Topics
+
 - Introduction with React
 - React vs. Vanilla JS
 - Pure React
@@ -22,6 +23,7 @@ understanding of React.
 - Next.js
 
 ## Projects
+
 - Pizza Menu
 - Date Counter
 - Flash Card
@@ -33,8 +35,10 @@ understanding of React.
 - Currency Converter
 - Classy Weather
 - Geolocation
-- React Quiz
+- React Quiz using Props and Context API
 - Create a bank account with useReducer
+- Worldwide - Keep track of your adventures
+- Atomic Blog using Props and Context API
 
 ## Self Scaffolded React Directory
 
@@ -111,6 +115,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## Vite
+
+From `24_react-router` onwards, the React project is scaffolded using Vite using `npm create vite`.
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
 ## Credits
 
-This repository follows the Udemy Course [**The Ultimate React Course 2024: React, Next.js, Redux & More**](https://www.udemy.com/course/the-ultimate-react-course/) by [Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtmann/).
+This repository follows the Udemy Course [The Ultimate React Course 2024: React, Next.js, Redux & More](https://www.udemy.com/course/the-ultimate-react-course/) by [Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtmann/).
